@@ -104,6 +104,9 @@ Yes. It is a great plugin with some great and unique features. It works very wel
 ### 🎉 v1.0.0 – 2025-04-04
 * Initial public release – _Yeah!_
 
+### v0.0.1 – 2022-07-07
+* First development alpha version
+
 ---
 
 ## Plugin Scope / Disclaimer
