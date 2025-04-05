@@ -124,4 +124,4 @@ Icons used in Admin Bar items: © Remix Icon
 
 Icon used in promo graphics: © Tabler Icons by Paweł Kuna
 
-Readme & Plugin Copyright: © 2025, David Decker – DECKERWEB.de
+Readme & Plugin Copyright: © 2022-2025, David Decker – DECKERWEB.de
