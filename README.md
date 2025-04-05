@@ -2,7 +2,7 @@
 
 Cleanup the (free) Lite version of WPForms to make it usable. Purify the admin screens to speed up your daily form building :-)
 
-![Purify WPForms Lite plugin banner](https://repository-images.githubusercontent.com/960403207/6b0f05a7-2643-43c8-b3ac-7517fe94e445)
+![Purify WPForms Lite plugin banner](https://repository-images.githubusercontent.com/960403207/329eaf4e-a64b-4a1a-94a5-6df92b04986c)
 
 
 * Contributors: [David Decker](https://github.com/deckerweb), [contributors](https://github.com/deckerweb/purify-wpforms-lite/graphs/contributors)
