@@ -67,7 +67,7 @@ For all other snippet manager plugins just use our plugin's main .php file [`pur
 
 #### For Code Snippet Version:
 
-Just manually: Download the latest Snippet version (see above) and import it in _WPForms Lite_. – You can delete the old snippet; then just activate the new one. Done.
+Just manually: Download the latest Snippet version (see above) and import it in your favorite snippets manager plugin. – You can delete the old snippet; then just activate the new one. Done.
 
 ---
 
