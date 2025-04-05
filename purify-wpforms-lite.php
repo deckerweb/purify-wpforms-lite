@@ -15,7 +15,7 @@ Requires WP:       6.7
 Requires PHP:      7.4
 GitHub Plugin URI: https://github.com/deckerweb/purify-wpforms-lite
 GitHub Branch:     master
-Copyright:         © 2025, David Decker – DECKERWEB
+Copyright:         © 2022-2025, David Decker – DECKERWEB
 
 TESTED WITH:
 Product			Versions
