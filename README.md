@@ -43,9 +43,9 @@ Enjoying the plugin? Feel free to treat me to a cup of coffee ☕🙂 through th
 1. Below, download the snippet version
 2. Import, then activate in your snippets plugin
 
-[**Download .json**](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/ddw-purify-wpforms-lite.code-snippets.json) version for version for: _Code Snippets_ (free & Pro), _Advanced Scripts_ (Premium), _Scripts Organizer_ (Premium) 
---> just use their elegant script import features 
---> in _Scripts Organizer_ use the "Code Snippets Import" 
+[**Download .json**](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/ddw-purify-wpforms-lite.code-snippets.json) version for version for: _Code Snippets_ (free & Pro), _Advanced Scripts_ (Premium), _Scripts Organizer_ (Premium)  
+--> just use their elegant script import features  
+--> in _Scripts Organizer_ use the "Code Snippets Import"  
 
 For _WPCode Lite_ use this [.json download file](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/ddw-purify-wpforms-lite.wpcode-lite.json)
 
