@@ -103,8 +103,13 @@ Yes. It is a great plugin with some great and unique features. It works very wel
 
 ## Changelog 
 
+### ⚡ v1.0.1 - 2025-04-??
+* New: Confirmed full compatibility with ClassicPress 2.x
+
+
 ### 🎉 v1.0.0 – 2025-04-05
 * Initial public release – _Yeah!_
+
 
 ### 🔧 v0.0.1 – 2022-07-07
 * First development alpha version
@@ -125,8 +130,6 @@ _Most of all:_ Enjoy your code snippet work again. And now, have fun building gr
 
 Official _WPForms Lite_ product logo graphic/icon: © WPForms, LLC
 
-Icons used in Admin Bar items: © Remix Icon
-
-Icon used in promo graphics: © Tabler Icons by Paweł Kuna
+Icon used in promo graphics: [© Tabler Icons by Paweł Kuna](https://tabler.io/icons)
 
 Readme & Plugin Copyright: © 2022-2025, David Decker – DECKERWEB.de
