@@ -34,7 +34,7 @@ Removes known promotional menus, the toolbar upgrade link, Pro templates and nam
 
 ## Requirements and limits
 
-PHP 8.0 is newly required compared with 1.0.0. WordPress 6.7 remains the minimum. Embedded components: Library 0.8.1 and Updater 2.1.0. Other WPForms releases are skipped conservatively. ClassicPress and real GitHub update delivery of this unpublished build are not verified. Banners and icons use an original form illustration.
+PHP 8.0 is newly required compared with 1.0.0. WordPress 6.7 remains the minimum. Embedded components: Library 0.8.1 and Updater 2.1.0. Other WPForms releases are skipped conservatively. ClassicPress compatibility is not verified. Banners and icons use an original form illustration.
 
 ## Frequently asked questions
 

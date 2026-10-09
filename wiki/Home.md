@@ -34,7 +34,7 @@ Removes known promotional menus, the toolbar upgrade link, Pro templates and nam
 
 ## Requirements and limits
 
-PHP 8.0 is newly required compared with 1.0.0. WordPress 6.7 remains the minimum. Embedded components: Library 0.8.1 and Updater 2.1.0. Other WPForms releases are skipped conservatively. ClassicPress and real GitHub update delivery of this unpublished build are not verified. Banners and icons use an original form illustration.
+PHP 8.0 is newly required compared with 1.0.0. WordPress 6.7 remains the minimum. Embedded components: Library 0.8.1 and Updater 2.1.0. Other WPForms releases are skipped conservatively. ClassicPress compatibility is not verified. Banners and icons use an original form illustration.
 
 ## Frequently asked questions
 
@@ -88,8 +88,8 @@ David Decker – DECKERWEB. Purify focuses on the free WPForms interface. Distri
 
 ## Reporting and support
 
-[Issues](https://github.com/deckerweb/purify-wpforms-lite/issues) · [Security](SECURITY.md)
+[Issues](https://github.com/deckerweb/purify-wpforms-lite/issues) · [Security](https://github.com/deckerweb/purify-wpforms-lite/blob/main/SECURITY.md)
 
 [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb) · [Newsletter](https://eepurl.com/gbAUUn)
 
-Copyright © 2022–2026 David Decker – DECKERWEB. GPL-2.0-or-later. [Third-party origins](THIRD-PARTY.md).
+Copyright © 2022–2026 David Decker – DECKERWEB. GPL-2.0-or-later. [Third-party origins](https://github.com/deckerweb/purify-wpforms-lite/blob/main/THIRD-PARTY.md).

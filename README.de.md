@@ -34,7 +34,7 @@ Entfernt bekannte Werbemenüs, den Upgrade-Link in der Toolbar, Pro-Vorlagen und
 
 ## Voraussetzungen und Grenzen
 
-PHP 8.0 ist gegenüber 1.0.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 0.8.1 und Updater 2.1.0. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress und echte GitHub-Updatezustellung dieses unveröffentlichten Standes sind nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
+PHP 8.0 ist gegenüber 1.0.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 0.8.1 und Updater 2.1.0. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress-Kompatibilität ist nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
 
 ## Häufige Fragen
 
