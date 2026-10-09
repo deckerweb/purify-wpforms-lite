@@ -1,135 +1,95 @@
-# Purify WPForms Lite 
+# Purify WPForms Lite
 
-Cleanup the (free) Lite version of WPForms to make it usable. Purify the admin screens to speed up your daily form building :-)
+![Purify WPForms Lite](assets/github-banner-en.png)
 
-![Purify WPForms Lite plugin banner](https://repository-images.githubusercontent.com/960403207/329eaf4e-a64b-4a1a-94a5-6df92b04986c)
+## About
 
+Remove known promotional elements from WPForms Lite while keeping useful free features accessible.
 
-* Contributors: [David Decker](https://github.com/deckerweb), [contributors](https://github.com/deckerweb/purify-wpforms-lite/graphs/contributors)
-* Tags: wpforms, cleanup, purify, wp-admin, admin, admin bar, form builder, forms, code snippet
-* Requires at least: 6.7
-* Requires PHP: 7.4
-* Stable tag: [main](https://github.com/deckerweb/purify-wpforms-lite/releases/latest)
-* Donate link: https://paypal.me/deckerweb
-* License: GPL v2 or later
+Version **1.1.0** · WordPress **6.7+** · PHP **8.0+** · GPL v2 or later
 
----
+[Deutsch](README.de.md) · [FAQ](docs/FAQ.en.md)
 
-[Support Project](#support-the-project) | [Installation](#installation) | [Updates](#updates) | [Description](#description) | [Frequently Asked Questions](#frequently-asked-questions) | [Changelog](#changelog) | [Plugin Scope / Disclaimer](#plugin-scope--disclaimer)
+## Contents
 
----
+[At a glance](#at-a-glance) · [Installation](#installation) · [Targeted cleanup](#targeted-cleanup) · [Requirements and limits](#requirements-and-limits) · [Frequently asked questions](#frequently-asked-questions) · [Changelog](#changelog) · [Author and project](#author-and-project) · [Reporting and support](#reporting-and-support)
 
-## Support the Project 
+## At a glance
 
-If you find this project helpful, consider showing your support by buying me a coffee! Your contribution helps me keep developing and improving this plugin.
+- Audited cleanup for WPForms Lite 1.9.4.2 and 2.0.2.2.
+- Keeps free fields, templates, form import/export and available payment controls; Lite 2.0.2.2 includes Stripe, PayPal Commerce and Square.
+- Removes entries, setup checklist, coupon upsells and cross-product advertising from navigation.
+- Plugin edition includes the deckerweb catalog, GitHub updater and local changelog.
+- Separate snippet imports for Code Snippets/Advanced Scripts and WPCode Lite/Pro.
 
-Enjoying the plugin? Feel free to treat me to a cup of coffee ☕🙂 through the following options:
+## Installation
 
-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W81BNTZE)
-- [Buy me a coffee](https://buymeacoffee.com/daveshine)
-- [PayPal donation](https://paypal.me/deckerweb)
-- [Join my **newsletter** for DECKERWEB WordPress Plugins](https://eepurl.com/gbAUUn)
+1. Install the ZIP under Plugins → Add New → Upload Plugin.
+2. Activate WPForms Lite and Purify. Check the status on the Plugins page.
+3. Alternatively import one matching snippet JSON. Do not activate the plugin and a duplicate snippet together.
 
----
+## Targeted cleanup
 
-## Installation 
+Removes known promotional menus, the toolbar upgrade link, Pro templates and named premium promotion areas. Forms, free fields, payments, backups, settings and operational notices remain. Entry and coupon upsells, checklist navigation, cross-plugin promotion and unnecessary dashboard cards are removed selectively. Cleanup does not modify saved WPForms data.
 
-#### **Quick Install – as Plugin**
-1. **Download ZIP:** [**purify-wpforms-lite.zip**](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/purify-wpforms-lite.zip)
-2. Upload via WordPress Plugins > Add New > Upload Plugin
-3. Once activated, you’ll see the tweaked stuff within the Admin Area and in the Admin Bar.
+## Requirements and limits
 
-#### **Alternative: Use as Code Snippet**
-1. Below, download the snippet version
-2. Import, then activate in your snippets plugin
+PHP 8.0 is newly required compared with 1.0.0. WordPress 6.7 remains the minimum. Embedded components: Library 0.8.1 and Updater 2.1.0. Other WPForms releases are skipped conservatively. ClassicPress and real GitHub update delivery of this unpublished build are not verified. Banners and icons use an original form illustration.
 
-[**Download .json**](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/ddw-purify-wpforms-lite.code-snippets.json) version for version for: _Code Snippets_ (free & Pro), _Advanced Scripts_ (Premium), _Scripts Organizer_ (Premium)  
---> just use their elegant script import features  
---> in _Scripts Organizer_ use the "Code Snippets Import"  
+## Frequently asked questions
 
-For _WPCode Lite_ use this [.json download file](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/ddw-purify-wpforms-lite.wpcode-lite.json)
+### Does it unlock Pro features?
 
-For all other snippet manager plugins just use our plugin's main .php file [`purify-wpforms-lite.php`](https://github.com/deckerweb/purify-wpforms-lite/blob/master/purify-wpforms-lite.php) and use its content as snippet (bevor saving your snippet: please check for your plugin if the opening php tag needs to be removed or not!).
+No. Premium features remain unavailable. Purify only removes known promotional elements.
 
---> Please decide for one of both alternatives!
+### Which versions are supported?
 
----
+Cleanup runs with WPForms Lite 1.9.4.2 and 2.0.2.2. Unknown versions, missing WPForms and WPForms Pro pause cleanup. The plugin list explains the status.
 
-## Updates 
+### Where are the settings?
 
-#### For Plugin Version:
+Cleanup is automatic. Purify adds no separate settings page. WPForms settings and Lite Connect backup controls remain accessible. Checklist progress is preserved; its menu entry and automatic onboarding are hidden. Entry transfer/automation and AI/MCP promotional views are omitted; existing settings are unchanged.
 
-1) Alternative 1: Just download a new [ZIP file](https://github.com/deckerweb/purify-wpforms-lite/releases/latest/download/purify-wpforms-lite.zip) (see above), upload and override existing version. Done.
+### Does it change forms or notices?
 
-2) Alternative 2: Use the (free) [**_Git Updater_ plugin**](https://git-updater.com/) and get updates automatically.
+No form data or WPForms settings are changed. Notifications, errors, security notices and real payment-fee disclosures remain. WPConsent installation through WPForms is blocked; native manual installation remains available. Purify does not remove installed plugins or enable/disable Lite Connect or existing AI access settings.
 
-3) Alternative 3: Upcoming! – In future I will built-in our own deckerweb updater. This is currently being worked on for my plugins. Stay tuned!
+### Can I use a snippet?
 
-#### For Code Snippet Version:
+Yes. Import the Code Snippets JSON in Code Snippets or Advanced Scripts, or the separate WPCode JSON in WPCode Lite/Pro. Run one edition only. Snippets contain cleanup without the shared catalog, updater or plugin-history dialog.
 
-Just manually: Download the latest Snippet version (see above) and import it in your favorite snippets manager plugin. – You can delete the old snippet; then just activate the new one. Done.
+### Does it support Multisite and what happens on uninstall?
 
----
+Cleanup follows the current website. Network activation is supported. Purify stores no form content or cleanup settings. Deactivation preserves data; uninstall cleans shared temporary Library data only after its final host is removed. Shared settings remain unless the separate Library deletion option was enabled. WPForms data is never deleted.
 
-## Description 
+### What external connections are used?
 
-This plugin **removes** all the promotional / upsell stuff that WPForms Lite is stuffing within itself and the WordPress Admin Area. That way you are **not distracted** and can **actually just USE** the free lite version of this form builder / forms manager plugin.
+The plugin updater checks GitHub through WordPress update checks. Optional Library online refresh is initially off and contacts the approved GitHub catalog only when enabled. User-triggered catalog installation downloads approved packages. Purify adds no telemetry. Snippets add no external requests.
 
-Nothing more, nothing less.
+[Full FAQ by topic](docs/FAQ.en.md)
 
-It may seem not much but the removing of "stuff" will make the difference, believe me.
+## Changelog
 
----
+### 1.1.0 · 2026-10-10
 
-## Frequently Asked Questions 
+- **New:** Shared catalog, GitHub release updater and accessible local changelog.
+- **Improved:** More thorough cleanup removes premium entry tools, coupon upsells, setup checklist links, WPVibe/WPCode promotion and advertising widgets while preserving usable Lite controls.
+- **Improved:** Original localized banners and icons use a clear form illustration.
+- **Fixed:** Unknown target versions pause cleanup safely and bundled German translations load.
+- **Misc:** PHP 8.0 is now required. Newsletter links contain no personal account data. Snippet imports remain available.
 
-### Why did you even bother and create such a plugin/snippet? 
+### 1.0.0 · 2025-04-05
 
-When working on a client site some years ago other options were not possible or allowed (reasons don't matter here) and I had to use WPForms Lite. While this plugin works just fine, all the promotional "things" and the aggressive upselling got on my nerves in a way that I had to do something about it. The result of that "something" you can see and install here. 😉
+- **New:** Initial public release.
 
-It's completely up to you to buy the Pro Version of WPForms. I love premium plugins and have nothing against them. What I do NOT love is taking over the WordPress Admin and aggressively pressuring on my nerves when I have serious work to do. Period.
+## Author and project
 
+David Decker – DECKERWEB. Purify focuses on the free WPForms interface. Distribution through GitHub; no WordPress.org release.
 
-### Does this plugin/snippet add any new features? 
+## Reporting and support
 
-No. This is intentional. If you don't want my "purify" plugin/snippet you can buy the WPForms Pro version or look for any other alternative.
+[Issues](https://github.com/deckerweb/purify-wpforms-lite/issues) · [Security](SECURITY.md)
 
+[Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb) · [Newsletter](https://eepurl.com/gbAUUn)
 
-### Is WPForms Lite any good? 
-
-Yes. It is a great plugin with some great and unique features. It works very well even in the free version.
-
----
-
-## Changelog 
-
-### ⚡ v1.0.1 - 2025-04-??
-* New: Confirmed full compatibility with ClassicPress 2.x
-
-
-### 🎉 v1.0.0 – 2025-04-05
-* Initial public release – _Yeah!_
-
-
-### 🔧 v0.0.1 – 2022-07-07
-* First development alpha version
-
----
-
-## Plugin Scope / Disclaimer
-
-This plugin comes as is.
-
-_Disclaimer 1:_ So far I will support the plugin for breaking errors to keep it working. Otherwise support will be very limited. Also, it will NEVER be released to WordPress.org Plugin Repository for a lot of reasons (ah, thanks, Matt!).
-
-_Disclaimer 2:_ All of the above might change. I do all this stuff only in my spare time.
-
-_Most of all:_ Enjoy your code snippet work again. And now, have fun building great sites!!! 😉
-
----
-
-Official _WPForms Lite_ product logo graphic/icon: © WPForms, LLC
-
-Icon used in promo graphics: [© Tabler Icons by Paweł Kuna](https://tabler.io/icons)
-
-Readme & Plugin Copyright: © 2022-2025, David Decker – DECKERWEB.de
+Copyright © 2022–2026 David Decker – DECKERWEB. GPL-2.0-or-later. [Third-party origins](THIRD-PARTY.md).

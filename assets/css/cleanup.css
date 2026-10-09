@@ -1,0 +1,46 @@
+/* Only source-audited promotion markers; never blanket-hide notices or settings. */
+.wpforms-admin-page #wpforms-notice-bar,
+.wpforms-admin-page .settings-lite-cta,
+.wpforms-admin-page #wpforms-setup-templates-list .wpforms-template.pro,
+.wpforms-admin-page .wpforms-context-menu-list-item[data-action="upgrade"],
+.wpforms-admin-page .wpforms-add-fields-group .wpforms-not-available,
+.wpforms-admin-page .wpforms-field-option-group-conditionals:has(> a.education-modal),
+.wpforms-admin-page .wpforms-panel-sidebar-section.education-modal,
+.wpforms-admin-page .wpforms-panel-content-also-available-item:has(a.wpforms-panel-content-also-available-item-upgrade-to-pro),
+.wpforms-admin-page .wpforms-field-option-row.education-modal,
+.wpforms-admin-page .wpforms-alert-ai.wpforms-educational-alert,
+.plugins-php tr[data-slug="wpforms-lite"] .wpforms-pro {
+    display: none !important;
+}
+@media screen and (min-width: 1024px) {
+    .wpforms-admin-page #wpforms-notice-bar + #wpforms-header-temp { top: inherit; }
+}
+/* Known promotion fallbacks, including dynamically inserted builder content. */
+.wpforms-admin-page .wpforms-template.pro,
+.wpforms-admin-page .wpforms-settings-provider.education-modal,
+.wpforms-admin-page .wpforms-settings-field-radio-wrapper.education-modal,
+.wpforms-admin-page .wpforms-footer-promotion,
+.wpforms-admin-page #wpforms-flyout,
+.wpforms-admin-page #wpforms-builder-lite-connect-top-bar,
+.wpforms-admin-page #wpforms-panel-field-confirmations-1-message_entry_preview-wrap,
+.wpforms-admin-page .wpforms-dyk:not(.wpforms-education-lite-connect-wrapper),
+.wpforms-admin-page .wpforms-add-fields-group:has(> .wpforms-add-fields-buttons:empty) {
+    display: none !important;
+}
+.wpforms-admin-page .wpforms-empty-payments-gateway:has(a.wpforms-upgrade-modal),
+.wpforms-admin-page .wpforms-template-upgrade-button,
+.wpforms-admin-page .wpforms-ai-mcp-card:has(.wpforms-ai-mcp-pro-badge.education-modal),
+.wpforms-admin-page .wpforms-builder-payment-settings-fee-notice {
+    display: none !important;
+}
+
+.wpforms-admin-page .wpforms-ai-mcp-page-builder { display: none !important; }
+
+.wpforms-admin-page .wpforms-dashboard-widget-entries-promo,
+.wpforms-admin-page .wpforms-education-lite-connect-enabled-info a.wpforms-upgrade-modal { display: none !important; }
+.wpforms-admin-page .wpforms-dashboard-widget-entries-col-interactions,
+.wpforms-admin-page .wpforms-dashboard-widget-entries-col-conversion,
+.wpforms-admin-page .wpforms-dashboard-spam-security-row:has(a.education-modal[data-type="plugin"]),
+.wpforms-admin-page .wpforms-dashboard-spam-security-row-or {
+    display: none !important;
+}

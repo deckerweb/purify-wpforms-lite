@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+title: Purify WPForms Lite
+description: WPForms Lite cleanup · Bereinigung für WPForms Lite
+exclude: [includes, languages, snippets, tools, resources]

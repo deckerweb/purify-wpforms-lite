@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+/.github export-ignore
+/tools export-ignore
+/resources export-ignore
+/snippets export-ignore
+/wiki export-ignore
+/_config.yml export-ignore
+/.gitattributes export-ignore
+/work export-ignore
+/assets/graphics-proposals-2026-10-10 export-ignore
+/assets/archive-original-graphics export-ignore

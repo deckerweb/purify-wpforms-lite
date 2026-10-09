@@ -1,0 +1,81 @@
+{
+  "variants": [
+    {
+      "variant": "A-formglas",
+      "name": "A · Formglas",
+      "palette": {
+        "name": "A · Formglas",
+        "bg1": "#1b1235",
+        "bg2": "#11142b",
+        "glow": "#6552a9",
+        "accent": "#92f3d3",
+        "main": "#f7f4ff",
+        "muted": "#c5bddb",
+        "outline": "#9c8fce"
+      },
+      "text_en": "More focus. Less distraction.",
+      "text_de": "Mehr Fokus. Weniger Ablenkung.",
+      "safe_zone_y": [
+        112.75,
+        527.25
+      ],
+      "content_y": [
+        158,
+        492
+      ]
+    },
+    {
+      "variant": "B-fokus",
+      "name": "B · Fokus",
+      "palette": {
+        "name": "B · Fokus",
+        "bg1": "#092943",
+        "bg2": "#051c30",
+        "glow": "#0d5975",
+        "accent": "#ffc683",
+        "main": "#fff7ed",
+        "muted": "#c5d6e0",
+        "outline": "#85b5c8"
+      },
+      "text_en": "More focus. Less distraction.",
+      "text_de": "Mehr Fokus. Weniger Ablenkung.",
+      "safe_zone_y": [
+        112.75,
+        527.25
+      ],
+      "content_y": [
+        158,
+        492
+      ]
+    },
+    {
+      "variant": "C-freiraum",
+      "name": "C · Freiraum",
+      "palette": {
+        "name": "C · Freiraum",
+        "bg1": "#f4eee9",
+        "bg2": "#eae9e7",
+        "glow": "#d5e6df",
+        "accent": "#176c60",
+        "main": "#2b243b",
+        "muted": "#655b70",
+        "outline": "#9aab9f"
+      },
+      "text_en": "More focus. Less distraction.",
+      "text_de": "Mehr Fokus. Weniger Ablenkung.",
+      "safe_zone_y": [
+        112.75,
+        527.25
+      ],
+      "content_y": [
+        158,
+        492
+      ]
+    }
+  ],
+  "font": "Inter",
+  "font_license": "SIL OFL 1.1",
+  "font_sha256": "b9a8e5e213977665be2a56db66945a16c686da3d9861af1e7851322cf15495ea",
+  "svg": "Native vector shapes, paths for typography, gradients; no raster images, no filters, no external resources.",
+  "status": "Design proposals A/B/C."
+}
