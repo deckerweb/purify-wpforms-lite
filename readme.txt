@@ -3,8 +3,8 @@ Contributors: deckerweb
 Tags: forms, wpforms, cleanup, purify
 Requires at least: 6.7
 Tested up to: 7.1.3
-Requires PHP: 8.0
-Stable tag: 1.1.0
+Requires PHP: 8.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,6 @@ Remove known promotional elements from WPForms Lite while keeping useful free fe
 * Keeps free fields, templates, form import/export and available payment controls; Lite 2.0.2.2 includes Stripe, PayPal Commerce and Square.
 * Removes entries, setup checklist, coupon upsells and cross-product advertising from navigation.
 * Plugin edition includes the deckerweb catalog, GitHub updater and local changelog.
-* Separate snippet imports for Code Snippets/Advanced Scripts and WPCode Lite/Pro.
 
 == Installation ==
 
@@ -42,7 +41,7 @@ No form data or WPForms settings are changed. Notifications, errors, security no
 
 = Can I use a snippet? =
 
-Yes. Import the Code Snippets JSON in Code Snippets or Advanced Scripts, or the separate WPCode JSON in WPCode Lite/Pro. Run one edition only. Snippets contain cleanup without the shared catalog, updater or plugin-history dialog.
+Earlier snippet downloads remain available with their original releases. This update is supplied as a plugin ZIP; do not activate a duplicate snippet alongside it.
 
 = Does it support Multisite and what happens on uninstall? =
 
@@ -55,6 +54,12 @@ The plugin updater checks GitHub through WordPress update checks. Optional Libra
 Full FAQ: https://github.com/deckerweb/purify-wpforms-lite/wiki/FAQ-by-topic
 
 == Changelog ==
+
+= 1.1.1 · 2026-10-22 =
+
+* Improved: Updated the shared catalog and GitHub updater; documentation navigation is clearer.
+* Fixed: The changelog has a documentation fallback and closes reliably when dialog methods are overridden.
+* Misc: PHP 8.1 or newer is required; WordPress 6.7 remains supported.
 
 = 1.1.0 · 2026-10-10 =
 

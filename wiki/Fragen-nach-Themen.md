@@ -1,6 +1,6 @@
 # Fragen nach Themen
 
-[English](FAQ-by-topic.md)
+[English](FAQ-by-topic)
 
 ## Einstieg und Alltag
 
@@ -22,7 +22,7 @@ Formulardaten und WPForms-Einstellungen werden nicht verändert. Benachrichtigun
 
 ### Kann ich ein Snippet verwenden?
 
-Ja. Importiere die Code-Snippets-JSON in Code Snippets oder Advanced Scripts beziehungsweise die separate WPCode-JSON in WPCode Lite/Pro. Verwende nur eine Fassung gleichzeitig. Snippets enthalten die Bereinigung ohne gemeinsamen Katalog, Updater und Plugin-Änderungsverlauf.
+Frühere Snippet-Downloads bleiben bei ihren ursprünglichen Releases verfügbar. Dieses Update wird als Plugin-ZIP angeboten; kein doppeltes Snippet gleichzeitig aktivieren.
 
 ## Technische Fragen
 

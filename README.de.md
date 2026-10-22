@@ -6,7 +6,7 @@
 
 Entfernt bekannte Werbeelemente aus WPForms Lite und erhält nützliche Funktionen der kostenlosen Version.
 
-Version **1.1.0** · WordPress **6.7+** · PHP **8.0+** · GPL v2 or later
+Version **1.1.1** · WordPress **6.7+** · PHP **8.1+** · GPL v2 or later
 
 [English](README.md) · [FAQ](docs/FAQ.de.md)
 
@@ -20,13 +20,12 @@ Version **1.1.0** · WordPress **6.7+** · PHP **8.0+** · GPL v2 or later
 - Erhält kostenlose Felder, Vorlagen, Formular-Import/-Export und verfügbare Zahlungsfunktionen; Lite 2.0.2.2 enthält Stripe, PayPal Commerce und Square.
 - Entfernt Einträge, Einrichtungs-Checkliste, Gutschein-Upsells und Fremdplugin-Werbung aus der Navigation.
 - Plugin-Fassung mit deckerweb-Katalog, GitHub-Updater und lokalem Änderungsverlauf.
-- Separate Snippet-Importe für Code Snippets/Advanced Scripts und WPCode Lite/Pro.
 
 ## Installation
 
 1. Installiere das ZIP unter Plugins → Installieren → Plugin hochladen.
 2. Aktiviere WPForms Lite und Purify. Prüfe den Status in der Pluginliste.
-3. Alternativ importiere genau eine passende Snippet-JSON. Plugin und Snippet nicht parallel aktivieren.
+3. Frühere doppelte Snippets nicht gleichzeitig mit dem Plugin aktivieren.
 
 ## Gezielte Bereinigung
 
@@ -34,7 +33,7 @@ Entfernt bekannte Werbemenüs, den Upgrade-Link in der Toolbar, Pro-Vorlagen und
 
 ## Voraussetzungen und Grenzen
 
-PHP 8.0 ist gegenüber 1.0.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 0.8.1 und Updater 2.1.0. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress-Kompatibilität ist nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
+PHP 8.1 ist gegenüber 1.1.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 1.1.0 und Updater 2.2.1. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress-Kompatibilität ist nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
 
 ## Häufige Fragen
 
@@ -56,7 +55,7 @@ Formulardaten und WPForms-Einstellungen werden nicht verändert. Benachrichtigun
 
 ### Kann ich ein Snippet verwenden?
 
-Ja. Importiere die Code-Snippets-JSON in Code Snippets oder Advanced Scripts beziehungsweise die separate WPCode-JSON in WPCode Lite/Pro. Verwende nur eine Fassung gleichzeitig. Snippets enthalten die Bereinigung ohne gemeinsamen Katalog, Updater und Plugin-Änderungsverlauf.
+Frühere Snippet-Downloads bleiben bei ihren ursprünglichen Releases verfügbar. Dieses Update wird als Plugin-ZIP angeboten; kein doppeltes Snippet gleichzeitig aktivieren.
 
 ### Funktioniert Multisite und was passiert bei der Deinstallation?
 
@@ -69,6 +68,12 @@ Der Plugin-Updater prüft GitHub über WordPress-Updateabfragen. Der optionale O
 [Vollständige Fragen nach Themen](docs/FAQ.de.md)
 
 ## Änderungsverlauf
+
+### 1.1.1 · 2026-10-22
+
+- **Verbessert:** Gemeinsamen Katalog und GitHub-Updater aktualisiert; Dokumentation übersichtlicher verlinkt.
+- **Behoben:** Der Änderungsverlauf hat einen Dokumentations-Fallback und lässt sich auch bei überschriebenen Dialogmethoden schließen.
+- **Sonstiges:** PHP 8.1 oder neuer ist erforderlich; WordPress 6.7 bleibt unterstützt.
 
 ### 1.1.0 · 2026-10-10
 

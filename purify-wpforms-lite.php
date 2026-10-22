@@ -3,9 +3,9 @@
  * Plugin Name: Purify WPForms Lite
  * Plugin URI: https://github.com/deckerweb/purify-wpforms-lite
  * Description: Remove promotional elements from WPForms Lite while preserving useful free features.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Requires at least: 6.7
- * Requires PHP: 8.0
+ * Requires PHP: 8.1
  * Author: David Decker – DECKERWEB
  * Author URI: https://github.com/deckerweb
  * License: GPL v2 or later
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 if ( ! class_exists( 'DDW_Purify_WPForms_Lite', false ) ) {
 /** Clean source-audited Lite promotions without changing form data or settings. */
 final class DDW_Purify_WPForms_Lite {
-    private const VERSION = '1.1.0';
+    private const VERSION = '1.1.1';
 
     /**
      * Register host translations and narrowly scoped admin cleanup.
@@ -332,7 +332,9 @@ final class DDW_Purify_WPForms_Lite {
         wp_enqueue_style( 'pwfl-cleanup', plugins_url( 'assets/css/cleanup.css', __FILE__ ), array(), self::VERSION );
         if ( false !== strpos( $screen->id, 'wpforms' ) ) {
             wp_enqueue_script( 'pwfl-cleanup', plugins_url( 'assets/js/cleanup.js', __FILE__ ), array(), self::VERSION, true );
-            wp_localize_script( 'pwfl-cleanup', 'pwflCleanup', array( 'fees' => __( '%s platform fees apply in addition to payment provider fees.', 'purify-wpforms-lite' ) ) );
+            // translators: %s is the platform fee percentage supplied by WPForms.
+            $fee_message = __( '%s platform fees apply in addition to payment provider fees.', 'purify-wpforms-lite' );
+            wp_localize_script( 'pwfl-cleanup', 'pwflCleanup', array( 'fees' => $fee_message ) );
         }
     }
 }
@@ -350,7 +352,9 @@ add_filter( 'plugin_row_meta', 'ddw_pwfl_pluginrow_meta', 10, 2 );
  */
 function ddw_pwfl_pluginrow_meta( $meta, $file ) {
     if ( $file !== plugin_basename( __FILE__ ) || ! current_user_can( 'activate_plugins' ) ) { return $meta; }
-    $meta[] = '<button type="button" class="button-link" data-pwfl-history>' . esc_html__( 'Changelog', 'purify-wpforms-lite' ) . '</button>';
+    $language = 0 === strpos( determine_locale(), 'de' ) ? 'de' : 'en';
+    $history_url = 'https://github.com/deckerweb/purify-wpforms-lite/blob/main/docs/CHANGELOG.' . $language . '.md';
+    $meta[] = '<a href="' . esc_url( $history_url ) . '" data-pwfl-history>' . esc_html__( 'Changelog', 'purify-wpforms-lite' ) . '</a>';
     $status = DDW_PWFL_Integration::status_label();
     if ( $status ) { $meta[] = $status; }
     $meta[] = '<a href="https://ko-fi.com/deckerweb" target="_blank" rel="nofollow noopener noreferrer">' . esc_html__( 'Donate', 'purify-wpforms-lite' ) . '</a>';

@@ -1,5 +1,11 @@
 # Änderungsverlauf
 
+### 1.1.1 · 2026-10-22
+
+- **Verbessert:** Gemeinsamen Katalog und GitHub-Updater aktualisiert; Dokumentation übersichtlicher verlinkt.
+- **Behoben:** Der Änderungsverlauf hat einen Dokumentations-Fallback und lässt sich auch bei überschriebenen Dialogmethoden schließen.
+- **Sonstiges:** PHP 8.1 oder neuer ist erforderlich; WordPress 6.7 bleibt unterstützt.
+
 ### 1.1.0 · 2026-10-10
 
 - **Neu:** Gemeinsamer Katalog, GitHub-Updater und zugänglicher lokaler Änderungsverlauf.

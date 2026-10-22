@@ -55,16 +55,16 @@ final class DDW_PWFL_Integration {
      */
     public static function updater() {
         if ( ! is_admin() && ! wp_doing_cron() && ! ( defined( 'WP_CLI' ) && WP_CLI ) ) { return; }
-        if ( ! class_exists( '\Deckerweb\GitHubReleaseUpdater\V2\Updater' ) ) {
-            require_once __DIR__ . '/deckerweb-github-release-updater-v2.php';
-        }
-        if ( ! defined( '\Deckerweb\GitHubReleaseUpdater\V2\Updater::SUPPORTS_HOST_TRANSLATIONS' ) ) {
+        $updater_class = require __DIR__ . '/deckerweb-github-release-updater-v2.php';
+        if ( ! is_string( $updater_class ) || ! class_exists( $updater_class, false )
+            || ! defined( $updater_class . '::SUPPORTS_HOST_TRANSLATIONS' )
+            || ! constant( $updater_class . '::SUPPORTS_HOST_TRANSLATIONS' ) ) {
             add_action( 'admin_notices', array( __CLASS__, 'updater_notice' ) );
             return;
         }
         $language = 0 === strpos( determine_locale(), 'de' ) ? 'de' : 'en';
         try {
-            $updater = new \Deckerweb\GitHubReleaseUpdater\V2\Updater(
+            $updater = new $updater_class(
                 self::$main_file, 'https://github.com/deckerweb/purify-wpforms-lite',
                 __( 'Purify WPForms Lite', 'purify-wpforms-lite' ),
                 __( 'Remove promotional elements from WPForms Lite while preserving useful free features.', 'purify-wpforms-lite' ),
@@ -72,7 +72,7 @@ final class DDW_PWFL_Integration {
                     'icons' => array( 'svg' => plugins_url( '../assets/icon.svg', __FILE__ ), '1x' => plugins_url( '../assets/icon-128x128.png', __FILE__ ), '2x' => plugins_url( '../assets/icon-256x256.png', __FILE__ ) ),
                     'banners' => array( 'low' => plugins_url( '../assets/banner-772x250-' . $language . '.png', __FILE__ ), 'high' => plugins_url( '../assets/banner-1544x500-' . $language . '.png', __FILE__ ) ),
                 ),
-                array( 'translate' => require __DIR__ . '/updater-translations.php' )
+                array_merge( deckerweb_library_updater_options_v1( self::$main_file, 'https://github.com/deckerweb/purify-wpforms-lite' ), array( 'translate' => require __DIR__ . '/updater-translations.php' ) )
             );
             $updater->register();
             add_filter( 'upgrader_source_selection', array( __CLASS__, 'validate_package' ), 30, 4 );
@@ -157,8 +157,8 @@ final class DDW_PWFL_Integration {
     public static function history_assets() {
         $screen = get_current_screen();
         if ( ! current_user_can( 'activate_plugins' ) || ! $screen || 'plugins' !== $screen->base ) { return; }
-        wp_enqueue_style( 'pwfl-history', plugins_url( '../assets/css/history.css', __FILE__ ), array(), '1.1.0' );
-        wp_enqueue_script( 'pwfl-history', plugins_url( '../assets/js/history.js', __FILE__ ), array(), '1.1.0', true );
+        wp_enqueue_style( 'pwfl-history', plugins_url( '../assets/css/history.css', __FILE__ ), array(), '1.1.1' );
+        wp_enqueue_script( 'pwfl-history', plugins_url( '../assets/js/history.js', __FILE__ ), array(), '1.1.1', true );
     }
 
     /**
@@ -170,8 +170,8 @@ final class DDW_PWFL_Integration {
         if ( ! current_user_can( 'activate_plugins' ) || ! $screen || 'plugins' !== $screen->base ) { return; }
         require_once __DIR__ . '/deckerweb-changelog-v1.php';
         $text = require __DIR__ . '/history.php';
-        echo '<dialog id="pwfl-history" aria-labelledby="pwfl-history-title"><h2 id="pwfl-history-title">' . esc_html__( 'Purify WPForms Lite changelog', 'purify-wpforms-lite' ) . '</h2>';
-        echo Deckerweb_Changelog_Renderer_V1::render( $text ); // Escapes all source text internally.
-        echo '<button type="button" data-pwfl-history-close>' . esc_html__( 'Close', 'purify-wpforms-lite' ) . '</button></dialog>';
+        echo '<dialog hidden id="pwfl-history" aria-labelledby="pwfl-history-title"><h2 id="pwfl-history-title">' . esc_html__( 'Purify WPForms Lite changelog', 'purify-wpforms-lite' ) . '</h2>';
+        echo wp_kses_post( Deckerweb_Changelog_Renderer_V1::render( $text ) );
+        echo '<form method="dialog"><button type="submit" data-pwfl-history-close>' . esc_html__( 'Close', 'purify-wpforms-lite' ) . '</button></form></dialog>';
     }
 }

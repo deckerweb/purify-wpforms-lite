@@ -4,7 +4,7 @@ Purify WPForms Lite: Copyright © 2022–2026 David Decker – DECKERWEB, GPL-2.
 
 The host adapter, updater translation bridge, local history controls and renderer are adapted from [Purify WPCode Lite](https://github.com/deckerweb/purify-wpcode-lite), Copyright David Decker – DECKERWEB, GPL-2.0-or-later. / Hostadapter, Übersetzungsbrücke, Verlaufssteuerung und Renderer stammen aus Purify WPCode Lite, GPL-2.0-or-later.
 
-Embedded [deckerweb Library](https://github.com/deckerweb/deckerweb-plugin-library) 0.8.1 and [deckerweb Updater](https://github.com/deckerweb/deckerweb-updater) 2.1.0: Copyright 2026 David Decker – DECKERWEB, GPL-2.0-or-later. Their distributed license notices remain intact. / Lizenzhinweise der mitgelieferten Komponenten bleiben erhalten.
+Embedded [deckerweb Library](https://github.com/deckerweb/deckerweb-plugin-library) 1.1.0 and [deckerweb Updater](https://github.com/deckerweb/deckerweb-updater) 2.2.1: Copyright 2026 David Decker – DECKERWEB, GPL-2.0-or-later. Their distributed license notices remain intact. / Lizenzhinweise der mitgelieferten Komponenten bleiben erhalten.
 
 No code from premium plugins is included. WPForms Lite is inspected as an external free dependency; its files are not bundled. / Kein Code aus Premium-Plugins enthalten. WPForms Lite wurde als externe kostenlose Abhängigkeit geprüft und wird nicht mitgeliefert.
 

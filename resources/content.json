@@ -5,8 +5,7 @@
       "Audited cleanup for WPForms Lite 1.9.4.2 and 2.0.2.2.",
       "Keeps free fields, templates, form import/export and available payment controls; Lite 2.0.2.2 includes Stripe, PayPal Commerce and Square.",
       "Removes entries, setup checklist, coupon upsells and cross-product advertising from navigation.",
-      "Plugin edition includes the deckerweb catalog, GitHub updater and local changelog.",
-      "Separate snippet imports for Code Snippets/Advanced Scripts and WPCode Lite/Pro."
+      "Plugin edition includes the deckerweb catalog, GitHub updater and local changelog."
     ],
     "faq": [
       [
@@ -27,7 +26,7 @@
       ],
       [
         "Can I use a snippet?",
-        "Yes. Import the Code Snippets JSON in Code Snippets or Advanced Scripts, or the separate WPCode JSON in WPCode Lite/Pro. Run one edition only. Snippets contain cleanup without the shared catalog, updater or plugin-history dialog."
+        "Earlier snippet downloads remain available with their original releases. This update is supplied as a plugin ZIP; do not activate a duplicate snippet alongside it."
       ],
       [
         "Does it support Multisite and what happens on uninstall?",
@@ -39,6 +38,24 @@
       ]
     ],
     "history": [
+      [
+        "1.1.1",
+        "2026-10-22",
+        [
+          [
+            "Improved",
+            "Updated the shared catalog and GitHub updater; documentation navigation is clearer."
+          ],
+          [
+            "Fixed",
+            "The changelog has a documentation fallback and closes reliably when dialog methods are overridden."
+          ],
+          [
+            "Misc",
+            "PHP 8.1 or newer is required; WordPress 6.7 remains supported."
+          ]
+        ]
+      ],
       [
         "1.1.0",
         "2026-10-10",
@@ -83,8 +100,7 @@
       "Geprüfte Bereinigung für WPForms Lite 1.9.4.2 und 2.0.2.2.",
       "Erhält kostenlose Felder, Vorlagen, Formular-Import/-Export und verfügbare Zahlungsfunktionen; Lite 2.0.2.2 enthält Stripe, PayPal Commerce und Square.",
       "Entfernt Einträge, Einrichtungs-Checkliste, Gutschein-Upsells und Fremdplugin-Werbung aus der Navigation.",
-      "Plugin-Fassung mit deckerweb-Katalog, GitHub-Updater und lokalem Änderungsverlauf.",
-      "Separate Snippet-Importe für Code Snippets/Advanced Scripts und WPCode Lite/Pro."
+      "Plugin-Fassung mit deckerweb-Katalog, GitHub-Updater und lokalem Änderungsverlauf."
     ],
     "faq": [
       [
@@ -105,7 +121,7 @@
       ],
       [
         "Kann ich ein Snippet verwenden?",
-        "Ja. Importiere die Code-Snippets-JSON in Code Snippets oder Advanced Scripts beziehungsweise die separate WPCode-JSON in WPCode Lite/Pro. Verwende nur eine Fassung gleichzeitig. Snippets enthalten die Bereinigung ohne gemeinsamen Katalog, Updater und Plugin-Änderungsverlauf."
+        "Frühere Snippet-Downloads bleiben bei ihren ursprünglichen Releases verfügbar. Dieses Update wird als Plugin-ZIP angeboten; kein doppeltes Snippet gleichzeitig aktivieren."
       ],
       [
         "Funktioniert Multisite und was passiert bei der Deinstallation?",
@@ -117,6 +133,24 @@
       ]
     ],
     "history": [
+      [
+        "1.1.1",
+        "2026-10-22",
+        [
+          [
+            "Verbessert",
+            "Gemeinsamen Katalog und GitHub-Updater aktualisiert; Dokumentation übersichtlicher verlinkt."
+          ],
+          [
+            "Behoben",
+            "Der Änderungsverlauf hat einen Dokumentations-Fallback und lässt sich auch bei überschriebenen Dialogmethoden schließen."
+          ],
+          [
+            "Sonstiges",
+            "PHP 8.1 oder neuer ist erforderlich; WordPress 6.7 bleibt unterstützt."
+          ]
+        ]
+      ],
       [
         "1.1.0",
         "2026-10-10",
@@ -154,5 +188,6 @@
         ]
       ]
     ]
-  }
+  },
+  "version": "1.1.1"
 }

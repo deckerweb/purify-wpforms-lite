@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.1.1 · 2026-10-22
+
+- **Improved:** Updated the shared catalog and GitHub updater; documentation navigation is clearer.
+- **Fixed:** The changelog has a documentation fallback and closes reliably when dialog methods are overridden.
+- **Misc:** PHP 8.1 or newer is required; WordPress 6.7 remains supported.
+
 ### 1.1.0 · 2026-10-10
 
 - **New:** Shared catalog, GitHub release updater and accessible local changelog.

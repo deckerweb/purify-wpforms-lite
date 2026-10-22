@@ -1,6 +1,6 @@
 # FAQ by topic
 
-[Deutsch](Fragen-nach-Themen.md)
+[Deutsch](Fragen-nach-Themen)
 
 ## Getting started and daily use
 
@@ -22,7 +22,7 @@ No form data or WPForms settings are changed. Notifications, errors, security no
 
 ### Can I use a snippet?
 
-Yes. Import the Code Snippets JSON in Code Snippets or Advanced Scripts, or the separate WPCode JSON in WPCode Lite/Pro. Run one edition only. Snippets contain cleanup without the shared catalog, updater or plugin-history dialog.
+Earlier snippet downloads remain available with their original releases. This update is supplied as a plugin ZIP; do not activate a duplicate snippet alongside it.
 
 ## Technical questions
 

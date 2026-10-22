@@ -1,7 +1,11 @@
 <?php
 /** Localized categorized history generated from the shared content source. */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-return "= 1.1.0 · " . __( "2026-10-10", 'purify-wpforms-lite' ) . " =\n" .
+return "= 1.1.1 · " . __( "2026-10-22", 'purify-wpforms-lite' ) . " =\n" .
+'* ' . __( "Improved", 'purify-wpforms-lite' ) . ': ' . __( "Updated the shared catalog and GitHub updater; documentation navigation is clearer.", 'purify-wpforms-lite' ) . "\n" .
+'* ' . __( "Fixed", 'purify-wpforms-lite' ) . ': ' . __( "The changelog has a documentation fallback and closes reliably when dialog methods are overridden.", 'purify-wpforms-lite' ) . "\n" .
+'* ' . __( "Misc", 'purify-wpforms-lite' ) . ': ' . __( "PHP 8.1 or newer is required; WordPress 6.7 remains supported.", 'purify-wpforms-lite' ) . "\n" .
+"= 1.1.0 · " . __( "2026-10-10", 'purify-wpforms-lite' ) . " =\n" .
 '* ' . __( "New", 'purify-wpforms-lite' ) . ': ' . __( "Shared catalog, GitHub release updater and accessible local changelog.", 'purify-wpforms-lite' ) . "\n" .
 '* ' . __( "Improved", 'purify-wpforms-lite' ) . ': ' . __( "More thorough cleanup removes premium entry tools, coupon upsells, setup checklist links, WPVibe/WPCode promotion and advertising widgets while preserving usable Lite controls.", 'purify-wpforms-lite' ) . "\n" .
 '* ' . __( "Improved", 'purify-wpforms-lite' ) . ': ' . __( "Original localized banners and icons use a clear form illustration.", 'purify-wpforms-lite' ) . "\n" .
