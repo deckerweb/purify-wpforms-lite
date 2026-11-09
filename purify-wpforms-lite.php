@@ -3,7 +3,7 @@
  * Plugin Name: Purify WPForms Lite
  * Plugin URI: https://github.com/deckerweb/purify-wpforms-lite
  * Description: Remove promotional elements from WPForms Lite while preserving useful free features.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Requires at least: 6.7
  * Requires PHP: 8.1
  * Author: David Decker – DECKERWEB
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 if ( ! class_exists( 'DDW_Purify_WPForms_Lite', false ) ) {
 /** Clean source-audited Lite promotions without changing form data or settings. */
 final class DDW_Purify_WPForms_Lite {
-    private const VERSION = '1.1.1';
+    private const VERSION = '1.1.2';
 
     /**
      * Register host translations and narrowly scoped admin cleanup.

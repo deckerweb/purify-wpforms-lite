@@ -2,9 +2,9 @@
 Contributors: deckerweb
 Tags: forms, wpforms, cleanup, purify
 Requires at least: 6.7
-Tested up to: 7.1.3
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,11 @@ The plugin updater checks GitHub through WordPress update checks. Optional Libra
 Full FAQ: https://github.com/deckerweb/purify-wpforms-lite/wiki/FAQ-by-topic
 
 == Changelog ==
+
+= 1.1.2 · 2026-11-09 =
+
+* Fixed: Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
+* Fixed: Temporary component data is cleaned up reliably when multiple plugins are uninstalled together; form data stays unchanged.
 
 = 1.1.1 · 2026-10-22 =
 

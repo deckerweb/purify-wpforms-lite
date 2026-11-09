@@ -12,7 +12,7 @@ pairs.update({
 for locale in ['de_DE','de_DE_formal']:
  ref=(r/'languages'/('purify-wpforms-lite-'+locale+'.po')).read_text().replace('purify-wpcode-lite','purify-wpforms-lite').replace('Purify WPCode Lite','Purify WPForms Lite').replace('WPCode Lite','WPForms Lite').replace('WPCode Pro','WPForms Pro')
  (s/(locale+'-reference.po')).write_text(ref)
- header='Project-Id-Version: Purify WPForms Lite 1.1.1\nPO-Revision-Date: 2026-10-22 00:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage-Team: German\nLanguage: '+locale+'\nContent-Type: text/plain; charset=UTF-8\nMIME-Version: 1.0\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n'
+ header='Project-Id-Version: Purify WPForms Lite 1.1.2\nPO-Revision-Date: 2026-10-22 00:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage-Team: German\nLanguage: '+locale+'\nContent-Type: text/plain; charset=UTF-8\nMIME-Version: 1.0\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n'
  (s/(locale+'.po')).write_text('msgid ""\nmsgstr '+json.dumps(header,ensure_ascii=False)+'\n\n'+'\n\n'.join('msgid '+json.dumps(a,ensure_ascii=False)+'\nmsgstr '+json.dumps(b,ensure_ascii=False) for a,b in pairs.items())+'\n')
  subprocess.run(['msgcat','--use-first',str(s/(locale+'.po')),str(s/(locale+'-reference.po')),str(lib/(locale+'.po')),str((r/'resources/updater')/('updater-'+locale+'.po')),'-o',str(s/(locale+'-merged.po'))],check=True)
  dest=r/'languages'/('purify-wpforms-lite-'+locale+'.po');subprocess.run(['msgmerge','--no-fuzzy-matching',str(s/(locale+'-merged.po')),str(r/'languages/purify-wpforms-lite.pot'),'-o',str(dest)],check=True)

@@ -6,7 +6,7 @@
 
 Entfernt bekannte Werbeelemente aus WPForms Lite und erhält nützliche Funktionen der kostenlosen Version.
 
-Version **1.1.1** · WordPress **6.7+** · PHP **8.1+** · GPL v2 or later
+Version **1.1.2** · WordPress **6.7+** · PHP **8.1+** · GPL v2 or later
 
 [English](README.md) · [FAQ](docs/FAQ.de.md)
 
@@ -33,7 +33,7 @@ Entfernt bekannte Werbemenüs, den Upgrade-Link in der Toolbar, Pro-Vorlagen und
 
 ## Voraussetzungen und Grenzen
 
-PHP 8.1 ist gegenüber 1.1.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 1.1.0 und Updater 2.2.1. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress-Kompatibilität ist nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
+PHP 8.1 ist gegenüber 1.1.0 neu erforderlich. WordPress 6.7 bleibt die Mindestversion. Eingebettet: Library 1.3.0 und Updater 2.4.0. Andere WPForms-Versionen werden vorsichtig ausgelassen. ClassicPress-Kompatibilität ist nicht bestätigt. Banner und Icons verwenden eine eigenständige Formulargrafik.
 
 ## Häufige Fragen
 
@@ -68,6 +68,11 @@ Der Plugin-Updater prüft GitHub über WordPress-Updateabfragen. Der optionale O
 [Vollständige Fragen nach Themen](docs/FAQ.de.md)
 
 ## Änderungsverlauf
+
+### 1.1.2 · 2026-11-09
+
+- **Behoben:** deckerweb Library auf 1.3.0 und Updater auf 2.4.0 aktualisiert: normale Updates unabhängig vom Katalog, begrenzte Downloads und strengere Paketprüfung.
+- **Behoben:** Temporäre Komponentendaten werden auch bei gemeinsamer Deinstallation mehrerer Plugins zuverlässig bereinigt; Formulardaten bleiben unverändert.
 
 ### 1.1.1 · 2026-10-22
 

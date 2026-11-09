@@ -45,6 +45,46 @@ return static function ( string $message ): string {
             return __( 'The approved release could not be verified.', 'purify-wpforms-lite' );
         case 'The approved release changed. Refresh updates first.':
             return __( 'The approved release changed. Refresh updates first.', 'purify-wpforms-lite' );
+        case 'Catalog diagnostics require a public catalog provider.':
+            return __( 'Catalog diagnostics require a public catalog provider.', 'purify-wpforms-lite' );
+        case 'Catalog approval':
+            return __( 'Catalog approval', 'purify-wpforms-lite' );
+        case 'Package download':
+            return __( 'Package download', 'purify-wpforms-lite' );
+        case 'Checksum verification':
+            return __( 'Checksum verification', 'purify-wpforms-lite' );
+        case 'Archive verification':
+            return __( 'Archive verification', 'purify-wpforms-lite' );
+        case 'The update server could not be reached. Try again later.':
+            return __( 'The update server could not be reached. Try again later.', 'purify-wpforms-lite' );
+        case 'The update request timed out. Try again later.':
+            return __( 'The update request timed out. Try again later.', 'purify-wpforms-lite' );
+        case 'The update server address could not be resolved.':
+            return __( 'The update server address could not be resolved.', 'purify-wpforms-lite' );
+        case 'The secure connection to the update server failed.':
+            return __( 'The secure connection to the update server failed.', 'purify-wpforms-lite' );
+        case 'The update server returned an unsuccessful HTTP response.':
+            return __( 'The update server returned an unsuccessful HTTP response.', 'purify-wpforms-lite' );
+        case 'The update provider did not return valid update data.':
+            return __( 'The update provider did not return valid update data.', 'purify-wpforms-lite' );
+        case 'The package does not match the approved checksum. Installation was stopped.':
+            return __( 'The package does not match the approved checksum. Installation was stopped.', 'purify-wpforms-lite' );
+        case 'The archive or plugin identity could not be verified. Installation was stopped.':
+            return __( 'The archive or plugin identity could not be verified. Installation was stopped.', 'purify-wpforms-lite' );
+        case 'Update stopped at %1$s: %2$s':
+            /* translators: 1: update stage, 2: fixed explanation. */
+            return __( 'Update stopped at %1$s: %2$s', 'purify-wpforms-lite' );
+        case 'HTTP status: %d.':
+            /* translators: %d: HTTP error status. */
+            return __( 'HTTP status: %d.', 'purify-wpforms-lite' );
+        case 'Invalid private download limits.':
+            return __( 'Invalid private download limits.', 'purify-wpforms-lite' );
+        case 'Invalid package cleanup provider.':
+            return __( 'Invalid package cleanup provider.', 'purify-wpforms-lite' );
+        case 'Safe package cleanup is unavailable for this update provider.':
+            return __( 'Safe package cleanup is unavailable for this update provider.', 'purify-wpforms-lite' );
+        case 'The update package identity, version or requirements could not be verified.':
+            return __( 'The update package identity, version or requirements could not be verified.', 'purify-wpforms-lite' );
         default:
             return $message;
     }

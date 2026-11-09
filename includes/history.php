@@ -1,7 +1,10 @@
 <?php
 /** Localized categorized history generated from the shared content source. */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-return "= 1.1.1 · " . __( "2026-10-22", 'purify-wpforms-lite' ) . " =\n" .
+return "= 1.1.2 · " . __( "2026-11-09", 'purify-wpforms-lite' ) . " =\n" .
+'* ' . __( "Fixed", 'purify-wpforms-lite' ) . ': ' . __( "Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.", 'purify-wpforms-lite' ) . "\n" .
+'* ' . __( "Fixed", 'purify-wpforms-lite' ) . ': ' . __( "Temporary component data is cleaned up reliably when multiple plugins are uninstalled together; form data stays unchanged.", 'purify-wpforms-lite' ) . "\n" .
+"= 1.1.1 · " . __( "2026-10-22", 'purify-wpforms-lite' ) . " =\n" .
 '* ' . __( "Improved", 'purify-wpforms-lite' ) . ': ' . __( "Updated the shared catalog and GitHub updater; documentation navigation is clearer.", 'purify-wpforms-lite' ) . "\n" .
 '* ' . __( "Fixed", 'purify-wpforms-lite' ) . ': ' . __( "The changelog has a documentation fallback and closes reliably when dialog methods are overridden.", 'purify-wpforms-lite' ) . "\n" .
 '* ' . __( "Misc", 'purify-wpforms-lite' ) . ': ' . __( "PHP 8.1 or newer is required; WordPress 6.7 remains supported.", 'purify-wpforms-lite' ) . "\n" .

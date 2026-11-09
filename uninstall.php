@@ -1,7 +1,7 @@
 <?php
 /** Remove this host's update cache and, for the final Library host, shared temporary data. */
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) { exit; }
-if ( WP_UNINSTALL_PLUGIN !== 'purify-wpforms-lite/purify-wpforms-lite.php' ) { return; }
+// Core retains the first plugin basename in a batch; this file owns only this host cleanup.
 /**
  * Clear this host's repository cache and release shared resources only when unowned.
  * @return void Preserves WPForms data and other installed Library hosts.
@@ -16,7 +16,7 @@ if ( is_multisite() ) {
     }
 }
 require_once __DIR__ . '/includes/deckerweb-plugin-library/lifecycle.php';
-deckerweb_library_uninstall_v3( __DIR__ . '/purify-wpforms-lite.php' );
+deckerweb_library_uninstall_v4( __DIR__ . '/purify-wpforms-lite.php' );
 
 $purify_wpforms_lite_updater_class = require __DIR__ . '/includes/deckerweb-github-release-updater-v2.php';
 if ( is_string( $purify_wpforms_lite_updater_class ) && is_callable( array( $purify_wpforms_lite_updater_class, 'clear_repository_cache' ) ) ) {

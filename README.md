@@ -6,7 +6,7 @@
 
 Remove known promotional elements from WPForms Lite while keeping useful free features accessible.
 
-Version **1.1.1** · WordPress **6.7+** · PHP **8.1+** · GPL v2 or later
+Version **1.1.2** · WordPress **6.7+** · PHP **8.1+** · GPL v2 or later
 
 [Deutsch](README.de.md) · [FAQ](docs/FAQ.en.md)
 
@@ -33,7 +33,7 @@ Removes known promotional menus, the toolbar upgrade link, Pro templates and nam
 
 ## Requirements and limits
 
-PHP 8.1 is newly required compared with 1.1.0. WordPress 6.7 remains the minimum. Embedded components: Library 1.1.0 and Updater 2.2.1. Other WPForms releases are skipped conservatively. ClassicPress compatibility is not verified. Banners and icons use an original form illustration.
+PHP 8.1 is newly required compared with 1.1.0. WordPress 6.7 remains the minimum. Embedded components: Library 1.3.0 and Updater 2.4.0. Other WPForms releases are skipped conservatively. ClassicPress compatibility is not verified. Banners and icons use an original form illustration.
 
 ## Frequently asked questions
 
@@ -68,6 +68,11 @@ The plugin updater checks GitHub through WordPress update checks. Optional Libra
 [Full FAQ by topic](docs/FAQ.en.md)
 
 ## Changelog
+
+### 1.1.2 · 2026-11-09
+
+- **Fixed:** Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
+- **Fixed:** Temporary component data is cleaned up reliably when multiple plugins are uninstalled together; form data stays unchanged.
 
 ### 1.1.1 · 2026-10-22
 
